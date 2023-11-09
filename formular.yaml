@@ -1,0 +1,19 @@
+---
+context: "foo"
+projects:
+  - name: "bar"
+    clients:
+      - name: "Bard"
+        quota: "50mb"
+    consumers:
+      - principal: "User:Alice"
+    producers:
+      - principal: "User:Bob"
+    topics:
+      - name: "A" # foo.bar.A
+      - name: "B" # foo.bar.B
+
+  - name: "zet"
+    topics:
+      - name: "A" # foo.zet.A
+      - name: "B" # foo.zet.B
